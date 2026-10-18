@@ -7,8 +7,8 @@ const NavLinks = async() => {
     const data = await res.json()
 
     return (
-        <div className='flex gap-5 justify-center'>
-            {data.map((n,i) => <Link href="/" key={i}>
+        <div className='flex gap-5 mt-4 mb-3 justify-center'>
+            {data.map((n) => <Link href={`/category/${n.slug}`} key={n.id}>
             {n.icon}{n.nameBn}
             </Link>)}
         </div>

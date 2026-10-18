@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { Suspense } from 'react';
 import NavLinks from './NavLinks';
 
 const Header = () => {
 
-    const date = new Date().toLocaleDateString("bn-BD", {
-    dateStyle: "full"   
-    })
+    // const date = new Date().toLocaleDateString("bn-BD", {
+    // dateStyle: "full"   
+    // })
 
     return (
         <div className='max-w-7xl mx-auto mt-3'>
@@ -21,10 +21,13 @@ const Header = () => {
             </div>
             <div>
             <p className='font-bold'>বাজার দর </p>
-            <div>{date}</div>
+            {/* <div>{date}</div> */}
             </div>
             </Link>
+
+            <Suspense fallback="Loading...">
             <NavLinks />
+            </Suspense>
         </div>
 
     );
