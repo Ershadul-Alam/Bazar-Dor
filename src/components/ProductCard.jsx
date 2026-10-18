@@ -1,7 +1,6 @@
 
 
 export default function ProductCard({detail}) {
-console.log(detail);
 
     return (
         <div className="w-full max-w-sm rounded-[28px] bg-[#f8faf7] p-5 shadow-sm border border-slate-100/80 font-sans">
