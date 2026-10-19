@@ -1,4 +1,5 @@
 import ProductCard from '@/components/ProductCard';
+import Link from 'next/link';
 import React, { Suspense } from 'react';
 
 const CategoryDetails = async({params}) => {
@@ -25,7 +26,10 @@ const CategoryDetails = async({params}) => {
                 {`মোট ${products.length}টি পণ্য দেখানো হচ্ছে`}
 
                 <div className='grid grid-cols-3'>
-                {products.map(product => <ProductCard key={product.id} detail={product} />)}
+                {products.map(product => 
+                <Link href={`/marketPriceDetail/${product.id}`} key={product.id}>
+                <ProductCard key={product.id} detail={product} />
+                </Link>)}
                 </div>
             </div>
         </div>
