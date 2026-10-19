@@ -2,17 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { Suspense } from 'react';
 import NavLinks from './NavLinks';
-import { connection } from 'next/server';
 
 const Header = () => {
 
     const date = new Date().toLocaleDateString("bn-BD", {
     dateStyle: "full"   
     })
-    console.log(date);
 
     return (
-        <div className='max-w-6xl mx-auto mt-3 flex'>
+        <div className='bg-[#FAFCFA]'>
+        <div className='max-w-6xl mx-auto mt-3 flex justify-between'>
             <div>
             <Link href={"/"} className='flex gap-1'>
             <div className='bg-green-600 inline-block p-2 rounded-lg'>
@@ -33,7 +32,16 @@ const Header = () => {
             </Suspense>
             </div>
 
-            <div>Buttons</div>
+            <div className='items-center'>
+                <button className='mr-4 font-bold'>
+                    সাইন আপ 
+                </button> 
+                <button
+                class="px-6 py-2.5 font-bold bg-[#05893E] text-white rounded-xl shadow-md shadow-green-600">
+                    সাইন ইন 
+                </button>
+            </div>
+        </div>
         </div>
 
     );

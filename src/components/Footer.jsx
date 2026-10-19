@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='border-t border-gray-400 mt-8'>
+        <div className='border-t border-[#E1E8E1] bg-[#FAFCFA] mt-8'>
             <div className='max-w-6xl mx-auto flex justify-between my-8'>
             <p>বাজার দর - প্রয়োজনীয় পণ্যের দাম এক নজরে।</p>
             <p>সকল দাম সম্ভাব্য; বাজার অবস্থার ওপর নির্ভর করে পরিবর্তিত হয়।</p>

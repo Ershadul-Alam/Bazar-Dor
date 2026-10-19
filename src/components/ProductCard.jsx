@@ -3,7 +3,7 @@
 export default function ProductCard({detail}) {
 
     return (
-        <div className="w-full max-w-sm rounded-[28px] bg-[#f8faf7] p-5 shadow-sm border border-slate-100/80 font-sans">
+        <div className="w-full max-w-sm rounded-[28px] bg-[#FAFCFA] p-5 border border-[#E1E8E1] font-sans">
             {/* Top Section: Icon & Title */}
             <div className="flex items-center gap-3.5 mb-5">
                 {/* Rounded square container for image */}

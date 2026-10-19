@@ -9,7 +9,7 @@ const Marquee = async() => {
     const data = await res.json()
 
     return (
-        <div>
+        <div className='border-y border-[#E1E8E1] bg-[#FAFCFA]'>
             <MarqueeText direction='right' duration={10}>
             {data.map(n => 
             
