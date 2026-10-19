@@ -1,7 +1,8 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import Link from 'next/link';
 
-const PriceDown = async() => {
+const PriceDown = async () => {
 
     const res = await fetch("https://openapi.programming-hero.com/api/bazardor/products")
     const data = await res.json()
@@ -10,12 +11,15 @@ const PriceDown = async() => {
     const sortedDownData = [...downData].sort((a, b) => a.change.pct - b.change.pct);
 
     return (
-        <div className='mt-4'>
+        <div className='mt-4 mx-auto max-w-6xl'>
             <span className="text-green-600 mr-1">▼</span>
             <span className='text-black'>আজ দাম কমেছে</span>
 
-            <div className='grid grid-cols-3'>
-            {sortedDownData.slice(0,6).map(product => <ProductCard key={product.id} detail={product}/>)}
+            <div className='grid grid-cols-3 gap-5'>
+                {sortedDownData.slice(0, 6).map(product =>
+                    <Link href={`/marketPriceDetail/${product.id}`} key={product.id}>
+                        <ProductCard key={product.id} detail={product} />
+                    </Link>)}
             </div>
         </div>
     );

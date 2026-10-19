@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import Link from 'next/link';
 
 const AllProducts = async() => {
 
@@ -7,11 +8,15 @@ const AllProducts = async() => {
     const data = await res.json()
 
     return (
-        <div>
+        <div className='mx-auto max-w-6xl'>
             <p>সব পণ্য</p>
             <p>মোট {data.length}টি পণ্য দেখানো হচ্ছে </p>
-            <div className='grid grid-cols-3'>
-                {data.map(product => <ProductCard key={product.id} detail={product} />)}
+            <div className='grid grid-cols-3 gap-5'>
+                {data.map(product => (
+                    <Link href={`/marketPriceDetail/${product.id}`} key={product.id}>
+                        <ProductCard detail={product} />
+                    </Link>
+                ))}
             </div>
         </div>
     );
