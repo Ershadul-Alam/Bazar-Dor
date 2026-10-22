@@ -101,8 +101,8 @@ const MarketPricePage = async({ params }) => {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200/70 text-xs">
-                  {marketData.map((row) => (
-                    <tr key={row.id} className="hover:bg-gray-50/50 transition-colors">
+                  {marketData.map((row,i) => (
+                    <tr key={i} className="hover:bg-gray-50/50 transition-colors">
                       <td className="py-3 px-4 font-bold text-gray-800">{row.market}</td>
                       <td className="py-3 px-4 text-gray-600">{row.division}</td>
                       <td className="py-3 px-4 text-center text-gray-700">{row.min}</td>

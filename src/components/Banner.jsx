@@ -25,7 +25,7 @@ const Banner = () => {
                 {date}
                 <p>আজকের বাজারের দাম এক নজরে</p>
                 <p>চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিস্তারিত, গড়, সর্বনিম্ন-সর্বাধিক এবং দামের পরিবর্তন এক জায়গায়।</p>
-                <button onClick={scrollToSection} class="px-6 py-2.5 bg-[#05893E] text-white font-medium rounded-xl shadow-md shadow-green-600">
+                <button onClick={scrollToSection} className="px-6 py-2.5 bg-[#05893E] text-white font-medium rounded-xl shadow-md shadow-green-600">
                     সব পণ্য দেখুন
                 </button>
             </div>

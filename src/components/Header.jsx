@@ -33,13 +33,13 @@ const Header = () => {
             </div>
 
             <div className='items-center'>
-                <button className='mr-4 font-bold'>
+                <Link href="/signup" className='mr-4 font-bold'>
                     সাইন আপ 
-                </button> 
-                <button
-                class="px-6 py-2.5 font-bold bg-[#05893E] text-white rounded-xl shadow-md shadow-green-600">
+                </Link> 
+                <Link href="/signin"
+                className="px-6 py-2.5 font-bold bg-[#05893E] text-white rounded-xl shadow-md shadow-green-600">
                     সাইন ইন 
-                </button>
+                </Link>
             </div>
         </div>
         </div>

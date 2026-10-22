@@ -9,7 +9,6 @@ const PriceUp = async() => {
 
     const upData = data.filter(product => product.change.dir === "up")
     const sortedUpData = [...upData].sort((a, b) => b.change.pct - a.change.pct);
-    console.log(sortedUpData);
 
     return (
         <div className='mt-4 mx-auto max-w-6xl'>
