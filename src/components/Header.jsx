@@ -3,13 +3,14 @@ import Link from 'next/link';
 import React, { Suspense } from 'react';
 import NavLinks from './NavLinks';
 import HeaderButtons from './HeaderButtons';
+import DateComponent from './DateComponent';
 
 
-const Header = async() => {
+const Header = () => {
 
-    const date = new Date().toLocaleDateString("bn-BD", {
-        dateStyle: "full"
-    })
+    // const date = new Date().toLocaleDateString("bn-BD", {
+    //     dateStyle: "full"
+    // })
 
 
     return (
@@ -26,7 +27,7 @@ const Header = async() => {
                         </div>
                         <div>
                             <p className='font-bold'>বাজার দর </p>
-                            <div>{date}</div>
+                            <DateComponent/>
                         </div>
                     </Link>
 
