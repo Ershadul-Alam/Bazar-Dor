@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# বাজার দর / BazarDor
 
-## Getting Started
+BazarDor is a Bengali-language market price guide that brings daily prices for everyday goods into one place. Browse products, track price changes, and compare prices across markets.
 
-First, run the development server:
+## Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 16** — App Router and server-rendered pages
+- **React 19** — user interface
+- **JavaScript**
+- **Tailwind CSS 4** and **DaisyUI** — styling and UI components
+- **MongoDB** — authentication data storage
+- **Better Auth** — email/password and Google and GitHub sign-in
+- **BazarDor Products API** — product, category, and market price data
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Browse daily prices** for products across categories such as rice, vegetables, fish, and spices.
+2. **Spot price changes** with separate lists of products whose prices have increased or decreased.
+3. **Explore category pages** to find products and their latest prices by category.
+4. **Compare market prices** with today’s price change, overall minimum and maximum, and a market-by-market breakdown.
+5. **Manage an account** with email/password registration and sign-in, Google or GitHub sign-in, and profile updates.
