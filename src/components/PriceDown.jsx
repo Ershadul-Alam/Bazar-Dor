@@ -11,9 +11,9 @@ const PriceDown = async () => {
     const sortedDownData = [...downData].sort((a, b) => a.change.pct - b.change.pct);
 
     return (
-        <div className='mt-4 mx-auto max-w-6xl'>
+        <div className='mt-14 mx-auto max-w-6xl'>
             <span className="text-green-600 mr-1">▼</span>
-            <span className='text-black'>আজ দাম কমেছে</span>
+            <span className='text-black font-bold inline-block mb-2 text-2xl'>আজ দাম কমেছে</span>
 
             <div className='grid grid-cols-3 gap-5'>
                 {sortedDownData.slice(0, 6).map(product =>

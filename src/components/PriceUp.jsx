@@ -11,9 +11,9 @@ const PriceUp = async() => {
     const sortedUpData = [...upData].sort((a, b) => b.change.pct - a.change.pct);
 
     return (
-        <div className='mt-4 mx-auto max-w-6xl'>
+        <div className='mt-14 mx-auto max-w-6xl'>
             <span className="text-red-600 mr-1">▲</span>
-            <span className='text-black'>আজ দাম বেড়েছে </span>
+            <span className='text-black font-bold inline-block mb-2 text-2xl'>আজ দাম বেড়েছে </span>
 
             <div className='grid grid-cols-3 gap-5'>
             {sortedUpData.slice(0, 6).map(product => (

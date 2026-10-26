@@ -8,9 +8,9 @@ const AllProducts = async() => {
     const data = await res.json()
 
     return (
-        <div className='mx-auto max-w-6xl' id='all-products'>
-            <p>সব পণ্য</p>
-            <p>মোট {data.length}টি পণ্য দেখানো হচ্ছে </p>
+        <div className='mt-14 mx-auto max-w-6xl' id='all-products'>
+            <p className='font-bold text-2xl'>সব পণ্য</p>
+            <p className='font-medium mb-2 text-lg'>মোট {data.length}টি পণ্য দেখানো হচ্ছে </p>
             <div className='grid grid-cols-3 gap-5'>
                 {data.map(product => (
                     <Link href={`/marketPriceDetail/${product.id}`} key={product.id}>

@@ -33,7 +33,7 @@
     "**/*.mts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/app/test/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

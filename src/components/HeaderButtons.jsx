@@ -21,7 +21,7 @@ const HeaderButtons = () => {
                 <div tabIndex={0} role="button" className="cursor-pointer m-1">{session.user.name} ⤵</div>
                 <ul tabIndex={-1} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                     <li><Link href="/profile">প্রোফাইল</Link></li>
-                    <li onClick={() => signOut()}>সাইন আউট</li>
+                    <li className="cursor-pointer" onClick={() => signOut()}>সাইন আউট</li>
                 </ul>
             </div>
                 </> :
