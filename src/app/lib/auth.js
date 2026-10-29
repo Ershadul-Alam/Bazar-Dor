@@ -5,7 +5,11 @@ import { mongodbAdapter } from "@better-auth/mongo-adapter";
 const client = new MongoClient(process.env.BETTER_AUTH_DB_URL);
 const db = client.db("bazar-dor");
 
+const appOrigin = process.env.BETTER_AUTH_URL;
+
 export const auth = betterAuth({
+  baseURL: appOrigin,
+  trustedOrigins: [appOrigin],
   emailAndPassword: { 
     enabled: true, 
   },
